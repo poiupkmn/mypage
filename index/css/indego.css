@@ -1,0 +1,326 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face{
+	font-family : KoPubDotumBold;
+	src : url('../webfont/KoPubDotumBold.eot');
+	src : url('../webfont/KoPubDotumBold.woff') format('woff');
+}
+@font-face{
+	font-family : KoPubDotumLight;
+	src : url('../webfont/KoPubDotumLight.eot');
+	src : url('../webfont/KoPubDotumLight.woff') format('woff');
+}
+@font-face{
+	font-family : KoPubDotumMedium;
+	src : url('../webfont/KoPubDotumMedium.eot');
+	src : url('../webfont/KoPubDotumMedium.woff') format('woff');
+}
+html{
+    position: relative;
+    height: 100%;
+}
+
+
+.swiper-container {
+        width: 100%;
+        height: 100%;
+}
+
+.swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+.swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
+  body {
+    margin: 0; padding: 0; background: url(../images/go/back6_01.jpg) 0 0 no-repeat; width: 100%; height: 100vh;
+    font-family : KoPubDotumMedium;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased!important;
+    text-rendering: optimizeLegibility!important;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .mod {
+    position: relative;
+    top: 0px; left: 0px; width: 100%; height: 100vh;
+    perspective: 330px; background: url(../images/go/back6_01.jpg) 0 0 no-repeat;
+  }
+  .mod .project-name {
+    position: absolute; width: auto; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); color: white;
+    font-size: 2.75em; text-transform: uppercase;
+    letter-spacing: 0.5em; text-align: center;
+    line-height: 1.5em; font-family: 'Roboto Mono';
+    font-weight: 300;
+  }
+  .mod .cube {
+    position: absolute; top: 50%; left: 50%;
+    margin-top: -105px; margin-left: -105px;
+    width: 210px; height: 210px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform-origin: 105px 105px;
+    animation: spinCube 9000ms linear infinite;
+  }
+  .mod .cube .faces {
+    position: absolute; top: 0px; left: 0px;
+    width: 294px; height: 256px;
+  }
+  .mod .cube .faces .dot {
+    position: absolute;
+    background: #ffffff; width: 2px; height: 2px;
+    border-radius: 50%;
+  }
+  .mod .cube .faces .p1 {
+    top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p2 {
+    top: -1px;
+    left: 50%;
+    margin-left: - 1px;
+  }
+  .mod .cube .faces .p3 {
+    top: -1px;
+    left: 100%;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p4 {
+    top: 50%;
+    left: -1px;
+    margin-top: -1px;
+  }
+  .mod .cube .faces .p5 {
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p6 {
+    top: 50%;
+    left: 100%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p7 {
+    top: 100%;
+    left: 0%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p8 {
+    top: 100%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p9 {
+    top: 100%;
+    left: 100%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p10 {
+    top: 25%;
+    left: 25%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p11 {
+    top: 25%;
+    left: 75%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p12 {
+    top: 75%;
+    left: 25%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .faces .p13 {
+    top: 75%;
+    left: 75%;
+    margin-top: -1px;
+    margin-left: -1px;
+  }
+  .mod .cube .f1 {
+    -webkit-transform: translateZ(-105px);
+    animation-delay: 0.3s;
+  }
+  .mod .cube .f2 {
+    -webkit-transform: translateZ(-84px);
+    animation-delay: 0.6s;
+  }
+  .mod .cube .f3 {
+    -webkit-transform: translateZ(-63px);
+    animation-delay: 0.9s;
+  }
+  .mod .cube .f4 {
+    -webkit-transform: translateZ(-42px);
+    animation-delay: 1.2s;
+  }
+  .mod .cube .f5 {
+    -webkit-transform: translateZ(-21px);
+    animation-delay: 1.5s;
+  }
+  .mod .cube .f6 {
+    -webkit-transform: translateZ(0px);
+    animation-delay: 1.8s;
+  }
+  .mod .cube .f7 {
+    -webkit-transform: translateZ(21px);
+    animation-delay: 2.1s;
+  }
+  .mod .cube .f8 {
+    -webkit-transform: translateZ(42px);
+    animation-delay: 2.4s;
+  }
+  .mod .cube .f9 {
+    -webkit-transform: translateZ(63px);
+    animation-delay: 2.7s;
+  }
+  .mod .cube .f10 {
+    -webkit-transform: translateZ(84px);
+    animation-delay: 3s;
+  }
+  .mod .cube .f11 {
+    -webkit-transform: translateZ(105px);
+    animation-delay: 3.3s;
+  }
+  @-webkit-keyframes spinCube {
+    0% {
+      -webkit-transform: rotateY(0deg) rotateX(-45deg) rotate(0deg);
+    }
+    50% {
+      -webkit-transform: rotateY(180deg) rotateX(135deg) rotate(180deg);
+    }
+    100% {
+      -webkit-transform: rotateY(360deg) rotateX(315deg) rotate(360deg);
+    }
+  }
+  @-webkit-keyframes spinDots {
+    0% {
+      -webkit-transform: rotateX(0deg) rotateY(45deg);
+    }
+    50% {
+      -webkit-transform: rotateX(-180deg) rotateY(-135deg);
+    }
+    100% {
+      -webkit-transform: rotateX(-360deg) rotateY(-315deg);
+    }
+  }
+  @-webkit-keyframes spinFaces {
+    0% {
+      -webkit-transform: rotateX(0deg);
+    }
+    50% {
+      -webkit-transform: rotateX(180deg);
+    }
+    100% {
+      -webkit-transform: rotateX(0deg);
+    }
+  }
+.sec1{ width: 100%; height: auto; display: flex;
+  flex-direction: column; justify-content: center;
+}
+.bluebox
+.flex{width: 100%; height: 100vh; padding-top: 100px;
+}
+.big1{ width: 786px; height: auto; display: flex; flex-direction: column;
+}
+.font1{ width: 300px; margin: 0 auto 0;
+    text-align: center; font-size: 50px; font-family : KoPubDotumMedium; color: #225cff;
+    
+}
+.flex2{ width: 1383px; height: 760px; margin: 0 auto; display: flex; margin-top: 184px; flex-direction: row;
+}
+.so1{ width: auto; height: 99px; display: flex; flex-direction: column;
+}
+.so1 p:nth-child(1){font-size: 88px; font-family : KoPubDotumMedium; color: #225cff; opacity: 0.1; text-align: left;
+}
+.so1 p:nth-child(2){font-size: 35px; font-family : KoPubDotumLight; position: relative; margin-top: -35px;
+  text-align: left; margin-left: 152px;
+}
+.so2{ width: 790px; height: 129px; display: flex; flex-direction: column; margin-top: 80px;
+}
+.so2 p:nth-child(1){ font-size: 88px; font-family : KoPubDotumMedium; color: #225cff; opacity: 0.1; height: 96px; width: 245px; margin-right: 100px;
+}
+.so2 p:nth-child(2){ font-size: 20px; font-family : KoPubDotumMedium; line-height: 2; width: 434px; text-align: left; margin-right: 0; margin-top: -44px; margin-left: 152px;
+}
+
+.big2{width: 708px; height: auto; display: flex; flex-direction: column;
+}
+.big2 > p{font-size: 88px; font-family : KoPubDotumMedium; color: #225cff; opacity: 0.1; text-align: left;
+}
+
+.rightbox1{
+ width: 708px; height: auto; display: flex; flex-direction: row;
+}
+.bfont1{margin-top: -50px; width: 180px;}
+.bfont1 > p{
+  color: #225cff; font-size: 30px; font-family : KoPubDotumMedium; line-height: 1.8; text-align: left;
+}
+
+.wrap{width: 290px; height: 378px; margin-top: -38px;
+}
+.progress-bar{ position: relative; width: 400px; height: 20px; margin: 0 auto 35px;
+  border: 1px solid #225cff; border-radius: 30px;
+}
+.bar{ position: absolute; left: 0; top: 0; bottom: 0; width: 0;
+  background: #225cff; border-radius: 30px;
+}
+.a{ position: absolute; top: -133%; bottom: 0; right: 137px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+.b{ position: absolute; top: -133%; bottom: 0; right: 98px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+.c{ position: absolute; top: -133%; bottom: 0; right: 195px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+.d{ position: absolute; top: -133%; bottom: 0; right: 19px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+.e{ position: absolute; top: -133%; bottom: 0; right: 38px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+.f{ position: absolute; top: -133%; bottom: 0; right: 78px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+.g{ position: absolute; top: -133%; bottom: 0; right: 57px;
+  font-size: 1.6rem; color: #225cff; line-height: 30px; opacity: 0.7;
+}
+
+.so3{width: 790px; height: 129px; display: flex; flex-direction: column; margin-top: 80px; margin-left: 152px;
+}
+.so3 > p{ font-size: 20px; text-align: left; font-family : KoPubDotumLight;
+}
+.golf{ font-family : KoPubDotumMedium; font-size: 23px;
+}
+
+.flex3{ display: flex; flex-direction: row; width: 1920px; height: 100vh; background: #0b526f; z-index: -20px;
+}
+
+.big3{ width: 1386px; height: 600px; margin: 0 auto; display: flex; flex-direction: row; 
+}
+.sobox3{width: 674px; height: 530px; display: flex; flex-direction: column;
+}
+.left3{ width: 674px; height: 530px; border: 2px solid white;
+  margin-top: 144px; margin-left: 130px; z-index: -2;
+}
+.bukbox{ width: 675px; height: 527px; background: white; z-index: 5; margin-right: 100px; justify-content: center;
+}
